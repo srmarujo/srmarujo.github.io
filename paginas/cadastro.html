@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="autor" content="Bruno Celestino da Mota">
+		<meta name="palavraschaves" content="html5, wedd1">
+		<meta name="gerador" content="Notepad++">
+		<title> Pfizer Oficial </title>
+		<link rel="shortcut icon" href="../imagens/pfizer.ico">
+		<link rel="stylesheet" type="text/css" href="../css/estilos.css">
+		<link rel="stylesheet" type="text/css" href="../css/formulario.css">
+		<script type="text/javascript" src="../script/validacaoForm.js"></script>
+	</head>
+	<body>
+		<header>
+			<nav class="menu">
+				<ul>
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="#">Cadastre-se</a>
+						<ul>
+						<li><a href="../paginas/cadastro.html">Vacinação</a></li>
+						</ul>
+					</li>
+					<li><a href="../paginas/sobre.html">Sobre</a></li>
+				</ul>
+			</nav>
+		</header><br><br><br>
+		<section>
+			<div>
+				<h1 id="titulo">Cadastro Vacinação</h1>
+				<p id="subtitulo">Complete suas informações</p><br>
+				<br>
+			</div>
+			<form action="cadastro.html" method="post" name="formulario">
+				<div class="campo">
+					<label for="nome"><strong>*Nome:</strong></label>
+					<input type="text" id="nome" name="nome">
+					<label for="sobrenome"><strong>Sobrenome:</strong></label>
+					<input type="text" id="sobrenome" name="sobrenome"><br><br>
+					<label for="email"><strong>Email:</strong></label>
+					<input type="email" id="email" name="email">
+					<label for="telef"><strong>*Telefone:</strong></label>
+					<input type="tel" id="telef" name="telef"><br><br>
+					<label for="genero"><strong>Genero:</strong></label><br>
+					<input type="radio" id="mas" name="genero" value="mas">
+					<label for="mas">Masculino</label><br>
+					<input type="radio" id="fem" name="genero" value="fem">
+					<label for="fem">Feminino</label><br>
+					<input type="radio" id="outro" name="genero" value="outro" checked="checked">
+					<label for="outro">Outro</label><br><br>
+					<label for="data"><strong>*Data de nascimento:</strong></label>
+					<input type="date" id="data" name="data"><br><br>
+				</div>
+				
+				<div class="campo">
+					<label for="alergia"><strong>Possui algum tipo de alergia?</strong></label>
+					<select id="alergia">
+						<option selected disabled value="">Selecione</option>
+						<option>Sim</option>
+						<option>Não</option>
+				<br><br></div>
+
+				<div class="campo">
+					<textarea row="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
+				</div>
+				<p>Campos com * são obrigatórios</p><br> 	
+				<button class="botao" type="submit" value="Enviar" onclick="validar()">Enviar</button>
+				<button class="botao" type="reset" value="Limpar">Limpar</button><br><br>
+			</form>
+		</section><br><br>	
+		<address>
+		<aside>
+			E-mail: sas@saude.gov.br
+		</aside>
+		<footer>
+			<p>Direito exclusivo Pzifer, 2021</p>
+		</footer>
+		<address/>
+	<body>
